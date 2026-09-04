@@ -3,7 +3,7 @@ using Oberyn.AnglerAssociate.Models;
 
 namespace Oberyn.AnglerAssociate.Data
 {
-    public static class HornOfMaguumaFishData
+    public static class FishDataHornOfMaguuma
     {
         public static readonly List<Fish> All = new List<Fish>
         {
@@ -16,6 +16,13 @@ namespace Oberyn.AnglerAssociate.Data
                 Location = Location.HornOfMaguuma,
                 Hole1 = FishingHole.Any,
                 Hole2 = FishingHole.OpenWater,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.FracturedChannelFish, Power = 250 },
+                    new FishHoleEntry { Hole = FishingHole.FracturedDesertFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.FracturedFreshwaterFish, Power = 500 },
+                    new FishHoleEntry { Hole = FishingHole.FracturedLakeFish, Power = 400 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Horn of Maguuma Fisher",
@@ -33,6 +40,10 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.HornOfMaguuma,
                 Location = Location.HornOfMaguuma,
                 Hole1 = FishingHole.FracturedLakeFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.FracturedLakeFish, Power = 400 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Horn of Maguuma Fisher",
@@ -51,6 +62,13 @@ namespace Oberyn.AnglerAssociate.Data
                 Location = Location.HornOfMaguuma,
                 Hole1 = FishingHole.FracturedFreshwaterFish,
                 Hole2 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DeepSkywatchArchipelagoFish, Power = 0 },
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.FracturedFreshwaterFish, Power = 500 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Night,
                 Collection = "Horn of Maguuma Fisher",
@@ -69,6 +87,13 @@ namespace Oberyn.AnglerAssociate.Data
                 Location = Location.HornOfMaguuma,
                 Hole1 = FishingHole.FracturedFreshwaterFish,
                 Hole2 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DeepSkywatchArchipelagoFish, Power = 0 },
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.FracturedFreshwaterFish, Power = 500 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Day,
                 Collection = "Horn of Maguuma Fisher",
@@ -87,6 +112,13 @@ namespace Oberyn.AnglerAssociate.Data
                 Location = Location.HornOfMaguuma,
                 Hole1 = FishingHole.FracturedDesertFish,
                 Hole2 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DeepSkywatchArchipelagoFish, Power = 0 },
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.FracturedDesertFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Day,
                 Collection = "Horn of Maguuma Fisher",
@@ -104,6 +136,13 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.HornOfMaguuma,
                 Location = Location.HornOfMaguuma,
                 Hole1 = FishingHole.FracturedChannelFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DeepSkywatchArchipelagoFish, Power = 0 },
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.FracturedChannelFish, Power = 250 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Mackerel,
                 TimeOfDay = TimeOfDay.Day,
                 Collection = "Horn of Maguuma Fisher",
@@ -122,6 +161,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Location = Location.HornOfMaguuma,
                 Hole1 = FishingHole.FracturedChannelFish,
                 Hole2 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.FracturedChannelFish, Power = 250 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.GlowWorm,
                 TimeOfDay = TimeOfDay.Night,
                 Collection = "Horn of Maguuma Fisher",
@@ -141,6 +185,14 @@ namespace Oberyn.AnglerAssociate.Data
                 Hole1 = FishingHole.Any,
                 Hole2 = FishingHole.OpenWater,
                 Hole3 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.AstralFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.DeepTowerFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.SpireFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Horn of Maguuma Fisher",
@@ -159,6 +211,14 @@ namespace Oberyn.AnglerAssociate.Data
                 Location = Location.HornOfMaguuma,
                 Hole1 = FishingHole.AstralFish,
                 Hole2 = FishingHole.SpireFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.AstralFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.DeepAmnytasFish, Power = 0 },
+                    new FishHoleEntry { Hole = FishingHole.DeepTowerFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.SpireFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Horn of Maguuma Fisher",
@@ -177,6 +237,14 @@ namespace Oberyn.AnglerAssociate.Data
                 Location = Location.HornOfMaguuma,
                 Hole1 = FishingHole.AstralFish,
                 Hole2 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.AstralFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.DeepAmnytasFish, Power = 0 },
+                    new FishHoleEntry { Hole = FishingHole.DeepTowerFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Day,
                 Collection = "Horn of Maguuma Fisher",
@@ -194,6 +262,14 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.HornOfMaguuma,
                 Location = Location.HornOfMaguuma,
                 Hole1 = FishingHole.AstralFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.AstralFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.DeepAmnytasFish, Power = 0 },
+                    new FishHoleEntry { Hole = FishingHole.DeepTowerFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Night,
                 Collection = "Horn of Maguuma Fisher",
@@ -214,6 +290,15 @@ namespace Oberyn.AnglerAssociate.Data
                 Hole2 = FishingHole.OpenWater,
                 Hole3 = FishingHole.SpireFish,
                 Hole4 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DeepAmnytasFish, Power = 0 },
+                    new FishHoleEntry { Hole = FishingHole.DeepTowerFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.SpireFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.AstralFish, Power = 550 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Dusk,
                 TimeOfDay2 = TimeOfDay.Dawn,
@@ -232,6 +317,13 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.HornOfMaguuma,
                 Location = Location.HornOfMaguuma,
                 Hole1 = FishingHole.AstralFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.AstralFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.DeepAmnytasFish, Power = 0 },
+                    new FishHoleEntry { Hole = FishingHole.DeepTowerFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                },
                 Bait = Bait.LightningBug,
                 TimeOfDay = TimeOfDay.Day,
                 Collection = "Horn of Maguuma Fisher",
@@ -250,6 +342,13 @@ namespace Oberyn.AnglerAssociate.Data
                 Location = Location.HornOfMaguuma,
                 Hole1 = FishingHole.SpireFish,
                 Hole2 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DeepTowerFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.SpireFish, Power = 600 },
+                },
                 Bait = Bait.FishEgg,
                 TimeOfDay = TimeOfDay.Night,
                 Collection = "Horn of Maguuma Fisher",
@@ -269,6 +368,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Hole1 = FishingHole.Any,
                 Hole2 = FishingHole.OpenWater,
                 Hole3 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Horn of Maguuma Fisher",
@@ -288,6 +392,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Hole1 = FishingHole.Any,
                 Hole2 = FishingHole.OpenWater,
                 Hole3 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Horn of Maguuma Fisher",
@@ -308,6 +417,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Hole2 = FishingHole.OpenWater,
                 Hole3 = FishingHole.DreamFish,
                 Hole4 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Horn of Maguuma Fisher",
@@ -327,6 +441,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Hole1 = FishingHole.Any,
                 Hole2 = FishingHole.OpenWater,
                 Hole3 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 HigherChance = TimeOfDay.Night,
@@ -348,6 +467,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Hole2 = FishingHole.OpenWater,
                 Hole3 = FishingHole.DreamFish,
                 Hole4 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 HigherChance = TimeOfDay.Day,
@@ -368,6 +492,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Hole1 = FishingHole.Any,
                 Hole2 = FishingHole.OpenWater,
                 Hole3 = FishingHole.NayosianFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 HigherChance = TimeOfDay.Day,
@@ -388,6 +517,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Hole1 = FishingHole.Any,
                 Hole2 = FishingHole.OpenWater,
                 Hole3 = FishingHole.DreamFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.DreamFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.NayosianFish, Power = 600 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Night,
                 Collection = "Horn of Maguuma Fisher",

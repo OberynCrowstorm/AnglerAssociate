@@ -3,7 +3,7 @@ using Oberyn.AnglerAssociate.Models;
 
 namespace Oberyn.AnglerAssociate.Data
 {
-    public static class JanthirFishData
+    public static class FishDataJanthir
     {
         public static readonly List<Fish> All = new List<Fish>
         {
@@ -16,6 +16,12 @@ namespace Oberyn.AnglerAssociate.Data
                 Location = Location.Janthir,
                 Hole1 = FishingHole.FreshwaterFish,
                 Hole2 = FishingHole.BrackishJanthirFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.LowlandBrackishFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandFreshwaterFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandShoreFish, Power = 550 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 HigherChance = TimeOfDay.Day,
@@ -35,6 +41,15 @@ namespace Oberyn.AnglerAssociate.Data
                 Location = Location.Janthir,
                 Hole1 = FishingHole.SaltwaterFish,
                 Hole2 = FishingHole.BrackishJanthirFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.BrackishJanthirFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.FreshwaterJanthirFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandBrackishFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandFreshwaterFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandOffshoreFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandShoreFish, Power = 550 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Janthir Fisher",
@@ -52,6 +67,12 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.Janthir,
                 Hole1 = FishingHole.Any,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.LowlandFreshwaterFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandOffshoreFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandShoreFish, Power = 550 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 HigherChance = TimeOfDay.Day,
@@ -70,6 +91,13 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.Janthir,
                 Hole1 = FishingHole.Any,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.LowlandBrackishFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandFreshwaterFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandOffshoreFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandShoreFish, Power = 550 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 HigherChance = TimeOfDay.Night,
@@ -88,6 +116,13 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.Janthir,
                 Hole1 = FishingHole.Any,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.LowlandBrackishFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandFreshwaterFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandOffshoreFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandShoreFish, Power = 550 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 HigherChance = TimeOfDay.Night,
@@ -106,6 +141,14 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.Janthir,
                 Hole1 = FishingHole.Any,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.BrackishJanthirFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandBrackishFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandFreshwaterFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandOffshoreFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandShoreFish, Power = 550 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 HigherChance = TimeOfDay.Night,
@@ -125,6 +168,12 @@ namespace Oberyn.AnglerAssociate.Data
                 Location = Location.Janthir,
                 Hole1 = FishingHole.FreshwaterFish,
                 Hole2 = FishingHole.BrackishJanthirFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.BrackishJanthirFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.FreshwaterJanthirFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.LowlandBrackishFish, Power = 550 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 HigherChance = TimeOfDay.Night,
@@ -143,6 +192,13 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.Janthir,
                 Hole1 = FishingHole.Any,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.BrackishJanthirFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.FreshwaterJanthirFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.OffshoreSaltwaterJanthirFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.ShoreSaltwaterJanthirFish, Power = 650 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 HigherChance = TimeOfDay.Day,
@@ -161,6 +217,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.Janthir,
                 Hole1 = FishingHole.SaltwaterFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.OffshoreSaltwaterJanthirFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.ShoreSaltwaterJanthirFish, Power = 650 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Janthir Fisher",
@@ -178,6 +239,13 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.Janthir,
                 Hole1 = FishingHole.Any,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.BrackishJanthirFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.FreshwaterJanthirFish, Power = 600 },
+                    new FishHoleEntry { Hole = FishingHole.OffshoreSaltwaterJanthirFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.ShoreSaltwaterJanthirFish, Power = 650 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Janthir Fisher",
@@ -196,6 +264,12 @@ namespace Oberyn.AnglerAssociate.Data
                 Location = Location.Janthir,
                 Hole1 = FishingHole.SaltwaterFish,
                 Hole2 = FishingHole.BrackishJanthirFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.BrackishJanthirFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.OffshoreSaltwaterJanthirFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.ShoreSaltwaterJanthirFish, Power = 650 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Janthir Fisher",
@@ -213,6 +287,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.Janthir,
                 Hole1 = FishingHole.SaltwaterFish,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.OffshoreSaltwaterJanthirFish, Power = 650 },
+                    new FishHoleEntry { Hole = FishingHole.ShoreSaltwaterJanthirFish, Power = 650 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 HigherChance = TimeOfDay.Night,
@@ -231,6 +310,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.MistburnedBarrens,
                 Hole1 = FishingHole.Any,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.BarrensFreshwaterFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.BloodstoneInfusedPondFish, Power = 550 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Mistburned Barrens Fisher",
@@ -248,6 +332,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.MistburnedBarrens,
                 Hole1 = FishingHole.Any,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.BarrensFreshwaterFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.BloodstoneInfusedPondFish, Power = 550 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Day,
                 Collection = "Mistburned Barrens Fisher",
@@ -265,6 +354,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.MistburnedBarrens,
                 Hole1 = FishingHole.Any,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.BarrensFreshwaterFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.BloodstoneInfusedPondFish, Power = 550 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Dusk,
                 TimeOfDay2 = TimeOfDay.Dawn,
@@ -284,6 +378,11 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.MistburnedBarrens,
                 Hole1 = FishingHole.Any,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.BarrensFreshwaterFish, Power = 550 },
+                    new FishHoleEntry { Hole = FishingHole.BloodstoneInfusedPondFish, Power = 550 },
+                },
                 Bait = Bait.Any,
                 TimeOfDay = TimeOfDay.Dusk,
                 TimeOfDay2 = TimeOfDay.Dawn,
@@ -303,6 +402,10 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.MistburnedBarrens,
                 Hole1 = FishingHole.Any,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.BarrensFreshwaterFish, Power = 550 },
+                },
                 Bait = Bait.SparkflyLarva,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Mistburned Barrens Fisher",
@@ -320,6 +423,10 @@ namespace Oberyn.AnglerAssociate.Data
                 Region = Region.Janthir,
                 Location = Location.MistburnedBarrens,
                 Hole1 = FishingHole.Any,
+                AllHoles = new List<FishHoleEntry>
+                {
+                    new FishHoleEntry { Hole = FishingHole.BloodstoneInfusedPondFish, Power = 550 },
+                },
                 Bait = Bait.LavaBeetle,
                 TimeOfDay = TimeOfDay.Any,
                 Collection = "Mistburned Barrens Fisher",

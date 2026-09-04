@@ -8,13 +8,15 @@ namespace Oberyn.AnglerAssociate.Services
     public static class FishCatalog
     {
         public static IEnumerable<Fish> All =>
-            TyriaFishData.All
-                .Concat(CanthaFishData.All)
-                .Concat(CastoraFishData.All)
-                .Concat(CrystalDesertFishData.All)
-                .Concat(GlobalFishData.All)
-                .Concat(HornOfMaguumaFishData.All)
-                .Concat(JanthirFishData.All);
+            FishDataTyria.All
+                .Concat(FishDataOrr.All)
+                .Concat(FishDataMaguumaJungle.All)
+                .Concat(FishDataCantha.All)
+                .Concat(FishDataCastora.All)
+                .Concat(FishDataCrystalDesert.All)
+                .Concat(FishDataGlobal.All)
+                .Concat(FishDataHornOfMaguuma.All)
+                .Concat(FishDataJanthir.All);
 
         // global (world and saltwater) fish have no cycle and are included whenever they're TimeOfDay.Any
         public static IEnumerable<Fish> GetCatchableNow()
