@@ -1,10 +1,10 @@
 {
   "name": "Angler Associate",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "namespace": "oberyn.anglerassociate",
   "package": "Oberyn.AnglerAssociate.dll",
   "manifest_version": 1,
-  "description": "Helps tracking which daily fish to catch for the EOD achievement and what fish can be caught based on the day/night cycle (and where)",
+  "description": "Tracks the daily EOD fishing bounty, shows what's catchable right now based on the day/night cycle, and helps you browse fish by region or find out what you can catch at a specific fishing hole - including exactly where to go and the nearest waypoint to get there.",
   "dependencies": {
     "bh.blishhud": ">=1.2.0"
   },
@@ -15,7 +15,9 @@
       "username": "Oberyn.6125"
     }
   ],
-  "directories": [ "anglerassociate" ],
+  "directories": [
+    "anglerassociate"
+  ],
   "enabled_without_gw2": true,
   "api_permissions": {
     "account": {

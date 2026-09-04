@@ -66,8 +66,31 @@ namespace Oberyn.AnglerAssociate.Services
             if (fish.CollectionId == null || fish.BitIndex == null)
                 return false;
 
-            return _completedBits.TryGetValue(fish.CollectionId.Value, out var bits)
-                && bits.Contains(fish.BitIndex.Value);
+            return IsBitCaught(fish.CollectionId.Value, fish.BitIndex.Value);
+        }
+
+        // Same bit index, but checked against the Avid collection's own ID - Avid is
+        // tracked as a genuinely separate achievement server-side, not just a flag on
+        // the base one, so it needs its own completion check.
+        public bool IsFishCaughtForAvid(Fish fish)
+        {
+            if (fish.AvidCollectionId == null || fish.BitIndex == null)
+                return false;
+
+            return IsBitCaught(fish.AvidCollectionId.Value, fish.BitIndex.Value);
+        }
+
+        // Per the GW2 API's own docs: "If an achievement is done, the in-progress bits
+        // are not displayed" - a fully completed achievement can come back with no
+        // bits array at all. So completion has to be checked first; falling through to
+        // bits only applies while the achievement is still in progress.
+        private bool IsBitCaught(int collectionId, int bitIndex)
+        {
+            if (_achievementDone.TryGetValue(collectionId, out var done) && done)
+                return true;
+
+            return _completedBits.TryGetValue(collectionId, out var bits)
+                && bits.Contains(bitIndex);
         }
     }
 }

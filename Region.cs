@@ -4,10 +4,12 @@ namespace Oberyn.AnglerAssociate.Models
     {
         Global = 0,
         Tyria = 1,
-        CrystalDesert = 2,
-        Cantha = 3,
-        HornOfMaguuma = 4,
-        Janthir = 5,
-        Castora = 6
+        Orr = 2,
+        MaguumaJungle = 8,
+        CrystalDesert = 3,
+        Cantha = 4,
+        HornOfMaguuma = 5,
+        Janthir = 6,
+        Castora = 7
     }
 }

@@ -28,7 +28,7 @@ namespace Oberyn.AnglerAssociate
         private CornerIcon _cornerIcon;
         private StandardWindow _mainWindow;
         private MainView _mainView;
-        private System.Threading.Timer _bannerRefreshTimer;
+        private System.Threading.Timer _liveDataRefreshTimer;
 
         [ImportingConstructor]
         public AnglerAssociateModule([Import("ModuleParameters")] ModuleParameters moduleParameters)
@@ -63,8 +63,8 @@ namespace Oberyn.AnglerAssociate
                 BuildContent();
                 BuildCornerIcon();
 
-                _bannerRefreshTimer = new System.Threading.Timer(
-                    _ => GameService.Graphics.QueueMainThreadRender(__ => _mainView.RefreshBanners()),
+                _liveDataRefreshTimer = new System.Threading.Timer(
+                    _ => GameService.Graphics.QueueMainThreadRender(__ => _mainView.RefreshLiveData()),
                     null,
                     TimeSpan.FromSeconds(1),
                     TimeSpan.FromSeconds(1)
@@ -91,6 +91,7 @@ namespace Oberyn.AnglerAssociate
             {
                 Parent = GameService.Graphics.SpriteScreen,
                 Title = "Angler Associate",
+                Emblem = ContentsManager.GetTexture("icons/angler_associate.png"),
                 Location = new Point(50, 50),
                 SavesPosition = true,
                 Id = "FishingBuddy_MainWindow",
@@ -135,7 +136,7 @@ namespace Oberyn.AnglerAssociate
 
         protected override void Unload()
         {
-            _bannerRefreshTimer?.Dispose();
+            _liveDataRefreshTimer?.Dispose();
             _cornerIcon?.Dispose();
             _mainWindow?.Dispose();
             Instance = null;
